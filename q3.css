@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    vertical-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.signature {
+    flex: 1;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+}
+
+.name {
+    flex: 1;
+    vertical-align: center;
+}
+
+.name h3 {
+    text-align: center;
+    color: black;
+}
+
+.menu {
+    flex: 1;
+    vertical-align: center;
+}
+
+.menu a {
+    text-align: center;
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.container h2 {
+    font-family: 'Roboto Slab';
+    font-style: bold;
+    font-weight: 500;
+}
+
+.left, .center, .right {
+    flex: 1;
+    padding: 15px;
+}
+
+.left p {
+    padding-left: 10px;
+}
+
+.center {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.review-header {
+    font-family: 'Roboto Slab';
+    font-style: bold;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.review {
+    border: 1px solid black;
+    padding: 15px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .left, .center, .right {
+        flex: 100%;
+        border: none;
+    }
+
+    .center {
+        border-left: none;
+        border-right: none;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .left, .center, .right {
+        flex: 1;
+    }
+
+    .center {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
